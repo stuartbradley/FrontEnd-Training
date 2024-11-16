@@ -1,7 +1,19 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+@foreach (var folder in folderNames)
+{
+    <h1>@folder</h1>
+}
 
-<h1>Hello, world!</h1>
+@code
+{
+    private List<string> folderNames = new();
+    protected override void OnInitialized()
+    {
+        string rootpath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot");
 
-Welcome to your new app.
+        folderNames = Directory.GetDirectories(rootpath).ToList();
+
+        base.OnInitialized();
+    }
+}
