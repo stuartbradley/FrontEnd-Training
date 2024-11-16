@@ -10,9 +10,7 @@
     private List<string> folderNames = new();
     protected override void OnInitialized()
     {
-        string rootpath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot");
-
-        folderNames = Directory.GetDirectories(rootpath).ToList();
+        folderNames = Directory.GetDirectories("./").ToList();
 
         base.OnInitialized();
     }
