@@ -1,15 +1,22 @@
 ﻿@page "/"
+@using FrontEndTraining.Models
 
-@foreach (var folder in folderNames)
+@foreach (var project in projects)
 {
-    <a href="/FrontEnd-Training/Projects/blog-preview-card-main/index.html"><h1>@folder</h1></a>
+    <a href="@project.URL"><h1>@project.Name</h1></a>
 }
 
 @code
 {
-    private List<string> folderNames = new()
+    private List<Project> projects = new()
     {
-        "blog-preview-card-main",
-        "product-preview-card-component-main"
+      new Project()
+      {
+          Name = "Blog Card", URL = "/FrontEnd-Training/Projects/blog-preview-card-main/index.html"
+      },
+      new Project()
+      {
+          Name = "Product Card", URL = "/FrontEnd-Training/Projects/Products-preview-card-components-main"
+      }
     };
 }
