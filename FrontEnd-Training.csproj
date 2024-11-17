@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,38 +7,42 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Projects\blog-preview-card-main\.gitignore" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\fonts\Figtree-Italic-VariableFont_wght.ttf" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\fonts\Figtree-VariableFont_wght.ttf" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\fonts\OFL.txt" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\fonts\README.txt" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\fonts\static\Figtree-ExtraBold.ttf" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\fonts\static\Figtree-SemiBold.ttf" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\images\favicon-32x32.png" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\images\illustration-article.svg" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\assets\images\image-avatar.webp" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\design\active-states.jpg" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\design\desktop-design.jpg" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\design\mobile-design.jpg" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\index.css" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\index.html" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\preview.jpg" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\README-template.md" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\README.md" />
-    <None Include="wwwroot\Projects\blog-preview-card-main\style-guide.md" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\.gitignore" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\design\active-states.jpg" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\design\desktop-design.jpg" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\design\desktop-preview.jpg" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\design\mobile-design.jpg" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\images\favicon-32x32.png" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\images\icon-cart.svg" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\images\image-product-desktop.jpg" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\images\image-product-mobile.jpg" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\index.html" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\README-template.md" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\README.md" />
-    <None Include="wwwroot\Projects\product-preview-card-component-main\style-guide.md" />
+    <Content Include="Projects\blog-preview-card-main\.gitignore" />
+    <Content Include="Projects\blog-preview-card-main\assets\fonts\Figtree-Italic-VariableFont_wght.ttf" />
+    <Content Include="Projects\blog-preview-card-main\assets\fonts\Figtree-VariableFont_wght.ttf" />
+    <Content Include="Projects\blog-preview-card-main\assets\fonts\OFL.txt" />
+    <Content Include="Projects\blog-preview-card-main\assets\fonts\README.txt" />
+    <Content Include="Projects\blog-preview-card-main\assets\fonts\static\Figtree-ExtraBold.ttf" />
+    <Content Include="Projects\blog-preview-card-main\assets\fonts\static\Figtree-SemiBold.ttf" />
+    <Content Include="Projects\blog-preview-card-main\assets\images\favicon-32x32.png" />
+    <Content Include="Projects\blog-preview-card-main\assets\images\illustration-article.svg" />
+    <Content Include="Projects\blog-preview-card-main\assets\images\image-avatar.webp" />
+    <Content Include="Projects\blog-preview-card-main\design\active-states.jpg" />
+    <Content Include="Projects\blog-preview-card-main\design\desktop-design.jpg" />
+    <Content Include="Projects\blog-preview-card-main\design\mobile-design.jpg" />
+    <Content Include="Projects\blog-preview-card-main\index.css" />
+    <Content Include="Projects\blog-preview-card-main\index.html" />
+    <Content Include="Projects\blog-preview-card-main\preview.jpg" />
+    <Content Include="Projects\blog-preview-card-main\README-template.md" />
+    <Content Include="Projects\blog-preview-card-main\README.md" />
+    <Content Include="Projects\blog-preview-card-main\style-guide.md" />
+    <Content Include="Projects\product-preview-card-component-main\.gitignore" />
+    <Content Include="Projects\product-preview-card-component-main\design\active-states.jpg" />
+    <Content Include="Projects\product-preview-card-component-main\design\desktop-design.jpg" />
+    <Content Include="Projects\product-preview-card-component-main\design\desktop-preview.jpg" />
+    <Content Include="Projects\product-preview-card-component-main\design\mobile-design.jpg" />
+    <Content Include="Projects\product-preview-card-component-main\images\favicon-32x32.png" />
+    <Content Include="Projects\product-preview-card-component-main\images\icon-cart.svg" />
+    <Content Include="Projects\product-preview-card-component-main\images\image-product-desktop.jpg" />
+    <Content Include="Projects\product-preview-card-component-main\images\image-product-mobile.jpg" />
+    <Content Include="Projects\product-preview-card-component-main\index.html" />
+    <Content Include="Projects\product-preview-card-component-main\README-template.md" />
+    <Content Include="Projects\product-preview-card-component-main\README.md" />
+    <Content Include="Projects\product-preview-card-component-main\style-guide.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <Folder Include="Projects\" />
   </ItemGroup>
 
   <ItemGroup>

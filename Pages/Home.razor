@@ -7,11 +7,9 @@
 
 @code
 {
-    private List<string> folderNames = new();
-    protected override void OnInitialized()
+    private List<string> folderNames = new()
     {
-        folderNames = Directory.GetDirectories("./").ToList();
-
-        base.OnInitialized();
-    }
+        "blog-preview-card-main",
+        "product-preview-card-component-main"
+    };
 }
