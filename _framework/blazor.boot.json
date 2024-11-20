@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FrontEnd-Training",
   "resources": {
-    "hash": "sha256-hYM00VI9AkS+ww9Fvo5FuHSi1MA42RO+ZN3qNQ+UE84=",
+    "hash": "sha256-Yo/H6bsyLeAeMEErHwXwd9pw6k8tNIXZV98Rp+IYZc4=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.n1sf6xr5tz.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "FrontEnd-Training.wasm": "sha256-LyAjchSoKEoGk4X/DEFx8RSdhs68lGPkJSxRIvJDHDE=",
+      "FrontEnd-Training.wasm": "sha256-lZzwJeWwrMUW6QeOyDopqFbpFoCmqUU/XMrCO2dOT5w=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-kDak8R55sqa+/813YQx9Y9RA/3dfg/UtDU6xI4lTr6U=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-o3dUFaYZ86Ri9/f+gxNOJf4LxhqxORvIZM29feN1GHk=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-kZSJV9ON9UL924dyAnAeoFHZXExv5A/OCxTHlMc+3fQ=",
