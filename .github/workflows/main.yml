@@ -23,12 +23,9 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish FrontEnd-Training.csproj -c Release -o release --nologo
 
-    # base href url value should be changed so that resources like CSS and scripts can load properly.
-    - name: Rewrite base href
-      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1.1.0
-      with:
-        html_path: '/index.html'
-        base_href: '/FrontEnd-Training/'
+ # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
+    - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
+      run: sed -i 's/<base href="\/" \/>/<base href="\/FrontEnd-Training\/" \/>/g' release/wwwroot/index.html
         
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
