@@ -22,15 +22,15 @@ jobs:
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish FrontEnd-Training.csproj -c Release -o release --nologo
-    
-# base href url value should be changed so that resources like CSS and scripts can load properly.
-- name: Rewrite base href
-  if: success()
-  uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
-  with:
-    html_path: ${{ env.PUBLISH_DIR }}/index.html
-    base_href: REPOSITORY_NAME
-    
+
+    # base href url value should be changed so that resources like CSS and scripts can load properly.
+    - name: Rewrite base href
+      if: success()
+      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+      with:
+        html_path: ${{ env.PUBLISH_DIR }}/index.html
+        base_href: REPOSITORY_NAME
+        
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
