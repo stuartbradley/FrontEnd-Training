@@ -1,0 +1,14 @@
+﻿.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 20rem;
+    text-align: center;
+    margin: 1rem 2.5rem;
+}
+.flex-Container{
+    display:flex;
+}
+
+

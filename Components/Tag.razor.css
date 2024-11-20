@@ -1,0 +1,13 @@
+﻿.tag {
+    padding: 2px 10px;
+    background-color: #47bcd4;
+    max-width: 3rem;
+    font-size: 16px;
+    border-radius: 250px;
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right:1rem;
+    text-align:left;
+}

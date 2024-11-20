@@ -1,22 +1,27 @@
 ﻿@page "/"
+@using FrontEnd_Training.Components
 @using FrontEndTraining.Models
 
-@foreach (var project in projects)
-{
-    <a href="@project.URL"><h1>@project.Name</h1></a>
-}
 
+<div class="flex-Container">
+    @foreach (var project in projects)
+    {
+        <div class="card">
+            <ProjectCard Project="project"/>
+        </div>
+    }
+</div>
 @code
 {
     private List<Project> projects = new()
     {
       new Project()
       {
-          Name = "Blog Card", URL = "/FrontEnd-Training/Projects/blog-preview-card-main/index.html"
+          Name = "Blog Card", URL = "/FrontEnd-Training/Projects/blog-preview-card-main/index.html", FrontEndMentorUrl = "https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd/steps/6627c1912f40450f914e8536/challenge/start" , SnapshotUrl = "projects/blog-preview-card-main/preview.jpg"
       },
       new Project()
       {
-          Name = "Product Card", URL = "/FrontEnd-Training/Projects/Products-preview-card-components-main"
+          Name = "Product Card", URL = "/FrontEnd-Training/Projects/Products-preview-card-components-main", FrontEndMentorUrl = "https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd/steps/6627c1912f40450f914e8536/challenge/start" , SnapshotUrl = "projects/blog-preview-card-main/preview.jpg"
       }
     };
 }
