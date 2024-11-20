@@ -27,7 +27,7 @@ jobs:
     - name: Rewrite base href
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1.1.0
       with:
-        html_path: 'index.html'
+        html_path: '/index.html'
         base_href: '/FrontEnd-Training/'
         
     # copy index.html to 404.html to serve the same file when a file is not found
