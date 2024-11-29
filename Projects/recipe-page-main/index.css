@@ -1,0 +1,115 @@
+:root {
+  --rose800: #7a284e;
+  --rose50: #fff7fb;
+  --stone900: #312e2c;
+  --stone600: #5f564d;
+  --stone150: #e3ddd7;
+  --stone100: #f3e5d7;
+  --brown800: #854632;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--stone100);
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 35rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.youngserif {
+  font-family: "Young Serif", serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.outfit-bold {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "outfit";
+  font-weight: 700;
+}
+
+.outfit-regular {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "outfit";
+  font-weight: 400;
+}
+
+.prep {
+  background-color: var(--rose50);
+  list-style-position: inside;
+  padding: 24px;
+  margin-bottom: 1rem;
+}
+
+.prep li {
+  color: var(--stone600);
+  padding-left: 8px;
+  line-height: 28px;
+}
+
+.prep li::marker {
+  color: var(--rose800);
+  font-size: 12px;
+}
+
+.prep h3 {
+  color: var(--rose800);
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.ingredients h2 {
+  color: var(--brown800);
+  font-family: "young serif";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.ingredients li {
+  padding-left: 24px;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.ingredients li::marker {
+  font-size: 12px;
+  margin: 100px;
+  color: var(--brown800);
+}
